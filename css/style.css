@@ -1,0 +1,310 @@
+/*==================================
+        Table of Content
+        1. Body and Core Css
+        2. Preloader
+        3. Navbar
+        4. Banner Section
+        5. About Section
+        6. Services Section
+        7. Stats Section
+        8. Portfolio Section
+        9. Blogs Section
+        10. Testimonial Section
+        11. Contact Form Section
+        12. Footer
+        13. Blogs Page
+        14. Single Blog Page
+        15. Mobile Responsive
+==================================*/
+
+
+/*============ 1. Body and Core Css ============*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  outline: none !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  font-family: "Raleway", san-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #da7f84;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h2,
+.navbar-brand {
+  font-family: 'Cookie', cursive;
+  color: #da7f84;
+}
+
+h2,
+.navbar-brand {
+  font-size: 40px;
+}
+
+
+.btn {
+  background-color: #da7f84;
+  border: none;
+  border-radius: 99px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+}
+
+.btn:hover {
+  background-color: #D16167;
+  color: #fff;
+}
+
+section {
+  padding: 136px 0;
+}
+
+/*============ 2. Preloader ============*/
+
+/*============ 3. Navbar ============*/
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #da7f84;
+}
+
+
+/*============ 4. Top Section ============*/
+
+.top {
+  background-image: url('/image/top.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  letter-spacing: 3px;
+  position: relative;
+  padding: 200px 0;
+  padding-top: 286px;
+}
+
+.top::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .6;
+}
+
+
+.top
+  h1,
+  p,
+  .btn {
+  position: relative;
+  z-index: 10;
+}
+
+.top-title {
+  font-weight: 700;
+}
+
+
+/*============ 5. About Section ============*/
+
+#about>.container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 48px;
+  width: 760px;
+}
+
+.about-img {
+  height: 240px;
+  position: absolute;
+  top: -48px;
+  width: 240px;
+  z-index: 10;
+}
+
+.about-bg {
+  background-color: #f8f4f2;
+  margin-left: 120px;
+  padding: 48px;
+  padding-left: 168px;
+  width: 640px;
+}
+
+.about-sub {
+  font-weight: 600;
+}
+
+
+/*============ 6. Service Section ============*/
+#services {
+  background-color: #f8f4f2;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+.card-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.price {
+  text-align: center;
+  margin: 16px 0;
+}
+
+
+/*============ 7. Gallery Section ============*/
+
+.img-thumbnail {
+  border-radius: 0;
+}
+
+
+/*============ 8. SNS Section ============*/
+#sns {
+  background-color: #f8f4f2;
+  text-align: center;
+}
+
+.fab {
+  font-size: 28px;
+  margin: 0 28px;
+}
+
+/*============ 9. Contact Section ============*/
+
+.contact-info {
+  position: relative;
+}
+
+.contact-info-left {
+  background-color: #f8f4f2;
+  padding: 60px 160px 60px 60px;
+  width: 900px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.contact-info-right {
+  background-color: #da7f84;
+  color: #fff;
+  left: 800px;
+  top: 64px;
+  padding: 60px;
+  position: absolute;
+  z-index: 10;
+}
+
+.fas {
+  display: inline-block;
+  width: 1lh;
+  height: 1lh;
+}
+
+.googlemaps {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.googlemaps iframe,
+.googlemaps object,
+.googlemaps embed {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*============ 10. Footer Section ============*/
+
+footer {
+  background-color: #da7f84;
+  color: #fff;
+  padding: 80px 0;
+}
+
+
+/*============ 11. Mobile Responsive ============*/
+
+@media screen and (max-width: 959px) {
+
+  #about>.container {
+    margin-top: 136px;
+  }
+  
+  .about-img {
+    top: -160px;
+  }
+  
+  .about-bg {
+    margin-top: 160px;
+    margin-left: 40px;
+    padding: 40px;
+    padding-top: 96px;
+    width: 90%;
+  }
+
+  .contact-info {
+    position: initial;
+  }
+  
+  .contact-info-left {
+    margin-bottom: 80px;
+    padding: 32px;
+    width: 100%;
+  }
+
+  .contact-info-right {
+    position: initial;
+    margin: auto;
+    width: 320px;
+  }
+
+}
+
+@media screen and (max-width: 559px) {
+
+  .about-bg {
+    width: 60%;
+}
