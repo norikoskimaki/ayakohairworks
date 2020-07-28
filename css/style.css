@@ -104,7 +104,7 @@ section {
 /*============ 4. Top Section ============*/
 
 .top {
-  background-image: url('../image/top.jpg');
+  background-image: url("../image/top.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
